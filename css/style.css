@@ -1,3 +1,8 @@
+html {
+    position: relative;
+    min-height: 100%;
+}
+
 body {
     background-image: url('../media/bigstock-183651688.jpg');
     background-size: cover;
@@ -43,21 +48,24 @@ li a:hover {
 }
 
 footer {
-    display: flex;
-    position: absolute;
-    bottom: 0;
     width: 100%;
-    text-align: center;
-    height: auto;
+    height: 50px;
     background-color: black;
     color: white;
     font-size: 16px;
+    text-align: left;
+    display: flex;
+
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    overflow: hidden;
 }
 
-.footer-item-container {
-    width: 25%;
-    text-align: left;
+.footer-text-item{
+    margin-left:0px;
 }
+
 
 .contact-name-item {
     font-weight: 500;
